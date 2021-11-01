@@ -1,0 +1,40 @@
+@import "../../variable.scss";
+.my-layout {
+  color: $fontColor;
+  padding-top: 50px;
+  &.is-desktop {
+    .my-content {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .my-header {
+      padding: 0 10%;
+    }
+  }
+}
+
+.my-content {
+  width: 100%;
+  padding: 20px;
+}
+
+.my-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $headerColor;
+  height: 40px;
+  padding: 0 20px;
+  text-align: right;
+  margin-top: 10px;
+  &::before {
+    content: "";
+    height: 10px;
+    background-color: $whiteColor;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../variable.scss";
+.my-product {
+  &.is-desktop {
+    display: flex;
+    justify-content: space-between;
+    .my-product__title {
+      margin: 0 0 30px;
+    }
+    .my-product__img {
+      width: 45%;
+    }
+    .my-product__content {
+      width: 45%;
+    }
+  }
+  color: $fontColor;
+  &__title {
+    margin: 20px 0 30px;
+    font-weight: 500;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__money {
+    font-weight: bold;
+    color: $fontColor;
+    border-top: 1px solid $borderPriceLight;
+    border-bottom: 1px solid $borderPriceLight;
+    padding: 10px 0;
+  }
+  &__description {
+    color: $fontColorLight;
+    margin-top: 30px;
+    line-height: 1.5rem;
+  }
+}
+
+.my-specs {
+  color: $fontColorLight;
+  &__name {
+      .my-specs_star {
+        color: $starColor;
+      }
+      .my-specs_size{
+        color: $fontColor;
+      }
+  }
+  &_star {
+    font-size: 20px;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  &__item {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid $borderColorLight;
+    &.is-active {
+      border-color: $borderColor;
+      color: $borderColor;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../variable.scss";
+
+.my-button {
+  outline: none;
+  border: 2px solid $borderColor;
+  color: $fontColor;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.desk-button {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $borderColor;
+    color: white;
+  }
+}

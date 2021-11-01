@@ -1,0 +1,35 @@
+@import "../../variable.scss";
+
+.my-cart {
+  display: inline-block;
+  height: 40px;
+  position: relative;
+  &__toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    font-size: 14px;
+    z-index: 10;
+    height: 100%;
+    line-height: 40px;
+    border: 1px solid transparent;
+    &.is-active {
+      border-color: $borderColorLight;
+      border-bottom-color: white;
+      background-color: white;
+    }
+  }
+  &__popup {
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+    display: none;
+    right: 0;
+    top: 39px;
+    border: 1px solid $borderColorLight;
+    background-color: white;
+    min-width: 380px;
+  }
+}

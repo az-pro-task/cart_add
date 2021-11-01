@@ -1,0 +1,18 @@
+.my-mini_product {
+  display: flex;
+  padding: 20px;
+  font-size: 18px;
+  &__img {
+    width: 100px;
+    margin-right: 20px;
+  }
+  &__content {
+    text-align: left;
+    > * {
+      margin-bottom: 10px;
+  }
+  }
+  &__price {
+    font-weight: bold;
+  }
+}
